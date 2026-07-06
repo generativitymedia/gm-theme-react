@@ -6,7 +6,7 @@
  * Consumers pass bundles explicitly.
  */
 
-import { validateThemeBundle, migrateThemeBundleToLatest, deepClone } from '@wrapmind/theme-core';
+import { validateThemeBundle, migrateThemeBundleToLatest, deepClone } from 'gm-theme-core';
 
 /**
  * Create a registry instance.

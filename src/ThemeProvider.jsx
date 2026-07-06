@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
-import { resolveNavigationTokens } from '@wrapmind/theme-core';
+import { resolveNavigationTokens } from 'gm-theme-core';
 import { applyThemeChrome, resolveIsDark, setDerivedSpacingVars, setDerivedTypographyVars, getColorBlindFilterSvg } from './applyThemeBundle.js';
 import { darkenHex, getContrastText, toRgba, darken, parsePxValue } from './color-utils.js';
 import { createRegistry } from './registry.js';
