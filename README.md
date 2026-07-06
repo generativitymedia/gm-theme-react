@@ -1,4 +1,4 @@
-# @wrapmind/theme-react
+# gm-theme-react
 
 **React bindings for the WrapMind theme engine.** ThemeProvider, hooks, registry, CSS variable application.
 
@@ -11,8 +11,8 @@ npm install github:WrapMind/theme-core#v1.0.0 github:WrapMind/theme-react#v1.0.0
 ## Usage
 
 ```jsx
-import { ThemeProvider, useTheme } from '@wrapmind/theme-react';
-import { validateThemeBundle } from '@wrapmind/theme-core';
+import { ThemeProvider, useTheme } from 'gm-theme-react';
+import { validateThemeBundle } from 'gm-theme-core';
 
 // Load your theme bundles (import at build time — no import.meta.glob needed)
 import defaultTheme from './themes/default.json';
@@ -74,7 +74,7 @@ function Main() {
 
 ## Architecture
 
-- **`@wrapmind/theme-core`** — Pure data: schema, validation, contrast math, ramp generation. Zero dependencies.
-- **`@wrapmind/theme-react`** — React bindings: context, hooks, CSS var application. Peer dep on React + theme-core.
+- **`gm-theme-core`** — Pure data: schema, validation, contrast math, ramp generation. Zero dependencies.
+- **`gm-theme-react`** — React bindings: context, hooks, CSS var application. Peer dep on React + theme-core.
 
 The ThemeProvider replaces all `--wm-*` CSS variables on `document.documentElement` in response to theme bundle changes, mode toggles, and user preference settings (density, radius, font size, etc.).
