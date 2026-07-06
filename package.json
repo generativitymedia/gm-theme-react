@@ -1,0 +1,35 @@
+{
+  "name": "@wrapmind/theme-react",
+  "version": "1.0.0",
+  "description": "React bindings for the WrapMind theme engine: ThemeProvider, hooks, registry, CSS variable application.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./provider": "./src/ThemeProvider.jsx",
+    "./hooks": "./src/hooks.js",
+    "./apply": "./src/applyThemeBundle.js",
+    "./color-utils": "./src/color-utils.js",
+    "./registry": "./src/registry.js"
+  },
+  "peerDependencies": {
+    "@wrapmind/theme-core": "file:../theme-core",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "files": [
+    "src/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WrapMind/theme-react.git"
+  },
+  "keywords": [
+    "theme",
+    "react",
+    "design-system",
+    "css-variables",
+    "theming"
+  ],
+  "license": "MIT"
+}
